@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <div id="flexContainer">
+        <label for="tempInput">Input Your Temperature Here</label>
+        <input type="text" name="tempInput" id="tempInput">
+        <div id="buttonContainer">
+            <input type="radio" name="temperature" id="celsiusButton" class="button" value="Celsius">
+            <label for="Celsius">To Celsius</label>
+            <input type="radio" name="temperature" id="fahrenheitButton" class="button" value="Fahrenheit">
+            <label for="Fahrenheit">To Fahrenheit</label>
+        </div>
+        <button id="clearButton">Clear</button>
+        <button id="convertButton">Convert</button>
+        <div id="tempOutput"></div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
