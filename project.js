@@ -1,5 +1,4 @@
-const printToDom = (divID, textToPrint) => {
-    const selectedDiv = document.getElementById(divID);
+const printToDom = (selectedDiv, textToPrint) => {
     selectedDiv.innerHTML = textToPrint;
 }
 
@@ -14,12 +13,28 @@ const toFahrenheit = (input) => {
 
 const temperatureConverter = () => {
     const tempInput = document.getElementById("tempInput").value;
+    const outputDiv = document.getElementById("tempOutput");
+    let domString = ``
     if (document.getElementById("celsiusButton").checked === true) {
-        const newCelsius = `${toCelsius(tempInput)} C`;
-        printToDom("tempOutput", newCelsius);
+        const newCelsius = toCelsius(tempInput);
+        if (newCelsius > 32) {
+            domString = `<p class="red"> ${newCelsius} C</p>`;
+        } else if (newCelsius <= 32 && newCelsius >= 0) {
+            domString = `<p class="green"> ${newCelsius} C</p>`;
+        } else {
+            domString = `<p class="blue"> ${newCelsius} C</p>`;
+        }
+        printToDom(outputDiv, domString);
     } else {
-        const newFahrenheit = `${toFahrenheit(tempInput)} F`;
-        printToDom("tempOutput", newFahrenheit);
+        const newFahrenheit = toFahrenheit(tempInput);
+        if (newFahrenheit > 90) {
+            domString = `<p class="red"> ${newFahrenheit} F</p>`;
+        } else if (newFahrenheit <= 90 && newFahrenheit >= 32) {
+            domString = `<p class="green"> ${newFahrenheit} F</p>`;
+        } else {
+            domString = `<p class="blue"> ${newFahrenheit} F</p>`;
+        }
+        printToDom(outputDiv, domString);
     };
 }
 

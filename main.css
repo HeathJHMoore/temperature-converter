@@ -70,5 +70,14 @@ input[type=radio]:not(old){
     font-size: 25px;
 }
 
+.green {
+    color: green;
+}
 
+.red {
+    color: red;
+}
 
+.blue {
+    color: blue;
+}
