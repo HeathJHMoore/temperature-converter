@@ -58,10 +58,14 @@ input[type=radio]:not(old){
 }
 
 #tempOutput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 1px black;
     margin-top: 20px;
     height: 43px;
     color: black;
+    font-size: 25px;
 }
 
 
