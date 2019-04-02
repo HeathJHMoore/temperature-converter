@@ -2,7 +2,7 @@
 
 Use this web application to easily convert temperature from Celsius to Fahrenheit and vice versa!
 
-![Image of Web-page.]( "Screenshot of my webpage")
+![https://raw.githubusercontent.com/HeathJHMoore/temperature-converter/master/images/Screen%20Shot%202019-04-02%20at%206.02.39%20PM.png]( "Screenshot of my webpage")
 
 
 ## Pre Requisites
